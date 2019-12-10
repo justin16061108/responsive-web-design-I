@@ -5,7 +5,6 @@
        padding:0;
        margin:0;
        max-width:100%;
-       border:1px solid grey;
    }
 
    body{
@@ -35,13 +34,14 @@
        display: flex;
        justify-content: space-evenly;
        align-items: center;
+       color: grey;
    }
 
    .topContent{
        display: flex;
        flex-wrap: wrap;
        justify-content: space-evenly;
-       
+       text-align: center;
    }
 
    .topIOD{
@@ -49,6 +49,7 @@
        font-family: 'bangers';
        text-align: center;
        width: 20%;
+       text-align-last: center;
    }
 
    .image1{
@@ -59,6 +60,7 @@
    .topSection {
     display: flex;
     justify-content: space-evenly;
+    border-top: 2px solid black;
    }
     
    .firstSection{
@@ -71,21 +73,92 @@
         margin-right: 5%;
    }
 
-   .bottomSection{
+    .bottomSection{
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 5%;
+    border-bottom: 2px solid black;
    }
 
      
-   .secondSection{
+    .secondSection{
     width: 30%;
 }
 
-.Contact {
+    .Contact {
     margin-left: 2%;
 }
   
-footer{
+    footer{
     text-align: center;
 }
+
+@media (max-width: 500px){
+    .image1 {
+        display: none;
+    }
+    .topContent{
+        width: 100%;
+    }
+
+    .topIOD{
+        text-align: center;
+        width: 100%;
+    }
+
+    nav{ 
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        text-align: center;   
+        line-height: 2;
+    }
+
+    .links{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      width: 100%;
+    }
+
+    .links a{
+        border-bottom: 1px solid black;
+        width: 100%;
+        text-align: center;
+    }
+
+    .logo{
+        width: 100%;
+        border-bottom: 1px solid black;
+    }
+
+    .topSection{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 2%;
+    }
+
+    .firstSection{
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .bottomSection{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 5%;
+    }
+
+    .secondSection{
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+
+@media (max-width: 500px){
+    .image1 {
+        display: none;
+    }
