@@ -1,3 +1,194 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+
+    /* General Style */
+   *{
+       box-sizing:border-box;
+       padding:0;
+       margin:0;
+       max-width:100%;
+   }
+
+   body{
+       line-height:1;
+   }
+
+   h1{
+    font-family: 'Bangers', cursive;
+    font-size: 25px;
+   }
+
+   section{
+       padding:3% 0;
+   }
+
+   nav{
+       display:flex;
+       justify-content: space-between;
+   }
+
+   .logo{
+       width: 20%;
+   }
+
+   .links{
+       width:80%;
+       display: flex;
+       justify-content: space-evenly;
+       align-items: center;
+       color: grey;
+   }
+
+   .topContent{
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-evenly;
+       text-align: center;
+   }
+
+   .topIOD{
+       font-size: 100px;
+       font-family: 'bangers';
+       text-align: center;
+       width: 20%;
+       text-align-last: center;
+   }
+
+   .image1{
+       width: 30%;
+       float: right;
+   }
+
+   .topSection {
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 2px solid black;
+   }
+    
+   .firstSection{
+       width: 40%;
+   }
+
+   .middle-img{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+   }
+
+    .bottomSection{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 5%;
+    border-bottom: 2px solid black;
+   }
+
+     
+    .secondSection{
+    width: 30%;
+}
+
+    .Contact {
+    margin-left: 2%;
+}
+  
+    footer{
+    text-align: center;
+}
+
+@media (max-width: 500px){
+    .image1 {
+        display: none;
+    }
+    .topContent{
+        width: 100%;
+    }
+
+    .topIOD{
+        text-align: center;
+        width: 100%;
+    }
+
+    nav{ 
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        text-align: center;   
+        line-height: 0.5;
+    }
+
+    .links{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      width: 100%;
+      line-height: 3;
+      border-top: 1px solid black;
+    }
+
+    .links a{
+        border-bottom: 1px solid black;
+        width: 100%;
+        text-align: center;
+    }
+
+    .logo{
+        width: 100%;
+        margin-bottom: -2%;
+    }
+
+    .topSection{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 2%;
+    }
+
+    .firstSection{
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .bottomSection{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 5%;
+    }
+
+    .secondSection{
+        width: 90%;
+        margin-left: 5%;
+    }
+}
 
 
+@media (max-width: 800px){
+    .image1 {
+        display: none;
+    }
+
+    .topContent{
+        width: 100%;
+    }
+
+    .topIOD{
+        text-align: center;
+        width: 100%;
+    }
+   
+    nav{ 
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        text-align: center;   
+        line-height: 2;
+    }
+    
+    .links{
+       width: 100%;
+       margin-top: 4%;
+    }
+
+    .logo{
+        width: 100%;
+    }
+
+}
