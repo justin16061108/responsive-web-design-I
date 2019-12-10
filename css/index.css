@@ -1,3 +1,33 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+    /* General Style */
+   *{
+       box-sizing:border-box;
+       padding:0;
+       margin:0;
+       max-width:100%;
+       border:1px solid grey;
+   }
 
+   body{
+       line-height:4;
+   }
+
+   section{
+       padding:4% 0;
+   }
+
+   nav{
+       display:flex;
+       justify-content: space-between;
+   }
+
+   .logo{
+       width: 80%;
+   }
+
+   .links{
+       width:80%;
+       display: flex;
+       justify-content: space-evenly;
+       align-items: center;
+   }
