@@ -111,7 +111,7 @@
         flex-direction: column-reverse;
         width: 100%;
         text-align: center;   
-        line-height: 2;
+        line-height: 0.5;
     }
 
     .links{
@@ -119,6 +119,8 @@
       flex-direction: column;
       text-align: center;
       width: 100%;
+      line-height: 3;
+      border-top: 1px solid black;
     }
 
     .links a{
@@ -129,7 +131,7 @@
 
     .logo{
         width: 100%;
-        border-bottom: 1px solid black;
+        margin-bottom: -2%;
     }
 
     .topSection{
@@ -158,7 +160,35 @@
 }
 
 
-@media (max-width: 500px){
+@media (max-width: 800px){
     .image1 {
         display: none;
     }
+
+    .topContent{
+        width: 100%;
+    }
+
+    .topIOD{
+        text-align: center;
+        width: 100%;
+    }
+   
+    nav{ 
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        text-align: center;   
+        line-height: 2;
+    }
+    
+    .links{
+       width: 100%;
+       margin-top: 4%;
+    }
+
+    .logo{
+        width: 100%;
+    }
+
+}
